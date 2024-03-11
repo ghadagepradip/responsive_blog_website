@@ -300,15 +300,26 @@ section img {
 .blog-list {
     width: 100%;
     height: 100vh;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* background-color:gainsboro; */
+    background-image: url("D:/pradip-project/responsive_blog_website/assests/images/wordb2.jpg");
+    background-size: 100% 100%;
 }
 .blog-list h1
 {
     font-size: 3vw;
+    /* font-weight: 400; */
+    margin-bottom: 10px;
+    color: rgb(255, 33, 33);
+}
+.blog-list h1 ion-icon
+{
+    fill: red;
+    /* line-height: 5px; */
 }
 
 .blog-container {
@@ -432,7 +443,7 @@ section img {
     justify-content: right;
 
     /* background-color: white; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .blog-writer-content-logo ion-icon {
