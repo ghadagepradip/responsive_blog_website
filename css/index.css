@@ -24,7 +24,7 @@
 
 /* Navigation section start */
 body {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -37,7 +37,7 @@ header {
     display: flex;
     top: 0;
     left: 0px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 
 }
 
@@ -204,6 +204,8 @@ header {
     /* background-image: linear-gradient(45deg, #cc2b5e, #e95ea3); */
     background-image: url("D:/pradip-project/responsive_blog_website/assests/images/img1.jpg");
     background-size: 100% 100%;
+    /* background-size: cover; */
+    background-attachment: fixed;
     /* background-blend-mode: soft-light; */
     background-repeat: no-repeat;
 
@@ -223,7 +225,6 @@ header {
     font-size: 9vw;
     font-family: 'Times New Roman', Times, serif;
     color: white;
-
     font-weight: 600;
 }
 
@@ -286,12 +287,28 @@ section img {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    min-height: 200px;
+    height: 30vh;
     border: none;
 }
 
 .custom-shape-divider-bottom-1709810101 .shape-fill {
     fill: #FFFFFF;
+    /* background: transparent; */
+
+}
+
+@media (max-width: 450px) {
+    .content-greet {
+        font-size: 10vw;
+    }
+
+    .content-other {
+        font-size: 5vw;
+    }
+
+    .content-company {
+        font-size: 5vw;
+    }
 }
 
 /* Main section ends*/
@@ -308,16 +325,17 @@ section img {
     /* background-color:gainsboro; */
     background-image: url("D:/pradip-project/responsive_blog_website/assests/images/wordb2.jpg");
     background-size: 100% 100%;
+    background-attachment: fixed;
 }
-.blog-list h1
-{
+
+.blog-list h1 {
     font-size: 3vw;
     /* font-weight: 400; */
     margin-bottom: 10px;
     color: rgb(255, 33, 33);
 }
-.blog-list h1 ion-icon
-{
+
+.blog-list h1 ion-icon {
     fill: red;
     /* line-height: 5px; */
 }
@@ -328,7 +346,7 @@ section img {
     overflow-y: scroll;
     /* scrollbar-color: rgb(243, 72, 209) white; */
     scrollbar-width: none;
-    
+
     /* border: 1px solid #000; */
 }
 
@@ -463,9 +481,13 @@ section img {
     min-height: 100vh;
     /* background: rgb(216, 210, 216); */
     display: flex;
-    position: relative;
+    /* position: relative; */
     justify-content: center;
     align-items: center;
+    background-image: url("D:/pradip-project/responsive_blog_website/assests/images/nature1.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding: 3% 0;
     /* background-image: linear-gradient(45deg, #b92b27, #1565C0); */
 }
 
@@ -479,7 +501,7 @@ section img {
 .contact .container {
     /* background:white; */
     width: 60%;
-    position: absolute;
+    /* position: absolute; */
     min-height: 70%;
     display: flex;
     align-items: center;
@@ -498,7 +520,7 @@ section img {
 }
 
 .container h1 {
-    font-size: 3.5vw;
+    font-size: 2em;
     font-family: 'Times New Roman', Times, serif;
     color: white;
     transition: 1s;
@@ -521,6 +543,7 @@ section img {
     margin: 5px auto;
     color: white;
     margin-bottom: 30px;
+
 }
 
 .container form:hover {
@@ -529,7 +552,7 @@ section img {
 }
 
 .container form label {
-    font-size: 1.3vw;
+    font-size: 1.3em;
     font-weight: bold;
     margin-left: 5%;
 }
@@ -542,6 +565,7 @@ section img {
     border-radius: 10px;
     transition: 1s;
     margin: 5px 10%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .container form input[type="text"]:hover {
@@ -556,10 +580,23 @@ section img {
     margin: 5px 10%;
     transition: 1s;
     border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .container form input[type="email"]:hover {
     transform: scale(1.5);
+}
+
+textarea {
+    padding: 2%;
+    width: 80%;
+    font-size: 0.7rem;
+    margin: 5px 10%;
+    transition: 1s;
+    /* background-color: white;
+    opacity: 0.5; */
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .container form input[type="submit"] {
@@ -579,12 +616,208 @@ section img {
 
 /* contact section ends */
 
+
+/* add section */
+.add-form-container {
+    width: 100%;
+    /* background-color: whitesmoke; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url("D:/pradip-project/responsive_blog_website/assests/images/spacback.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.add-form {
+    width: 80%;
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+
+}
+.add-form h1
+{
+    color: white;
+    font-size: 2em;
+}
+
+.act-form {
+    /* border: 1px solid #000; */
+    width: 90%;
+    min-height: 10vh;
+    padding: 1%;
+    margin: 10px 0px;
+    display: flex;
+    position: relative;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.act-form label {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 10px 0px;
+    color: darkorange;
+}
+
+.act-form input[type="text"] {
+    width: 60%;
+    background-color: rgba(255, 254, 254, 0.3);
+    padding: 3px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px 0px;
+    /* opacity: 0.5; */
+}
+.act-form input[type="text"]::placeholder
+{
+    color: white;
+}
+
+.act-form input[type="email"] {
+    width: 60%;
+    background-color: rgba(255, 254, 254, 0.3);
+    padding: 3px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0px;
+    /* opacity: 0.5; */
+}
+.act-form input[type="email"]::placeholder
+{
+    color: white;
+}
+
+.act-form input[type="file"] {
+    /* background-color: rgb(119, 136, 153); */
+    background-color: rgba(119, 136, 153,0.5);
+    width: 60%;
+    padding: 3px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    border: none;
+    color: white;
+    /* opacity: 0.5; */
+}
+
+.act-form textarea {
+    width: 90%;
+    height: 300px;
+    background-color: rgba(255, 254, 254, 0.3);
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px 0px;
+    /* opacity: 0.5; */
+
+}
+
+.animation {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    /* bottom: 0; */
+    /* align-items: center; */
+    justify-content: center;
+    /* border: 1px solid #000; */
+    /* max-height: 390px; */
+    /* background-color: #ccc; */
+    /* background-image: url(); */
+}
+
+.animation-toy {
+    width: 23%;
+    height: 23%;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    animation: ani;
+    border: 3px solid gold;
+    /* background: rgb(0, 234, 255); */
+
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate-reverse;
+}
+.animation-toy-2 {
+    width: 23%;
+    height: 23%;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    animation: ani2;
+    border: 3px solid gold;
+    /* background: rgb(0, 234, 255); */
+    /* opacity: 0.4; */
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ani {
+    0% {
+        /* left: 50%; */
+        bottom: 0;
+        width: 20%;
+        height: 26%;
+        /* border: none; */
+        /* width: ; */
+        /* border-radius: 50%; */
+    }
+
+    100% {
+        /* left: 50%; */
+        width: 23%;
+        height: 23%;
+        bottom: 45%;
+        /* border: none; */
+
+        /* border-radius: 25%; */
+    }
+}
+@keyframes ani2 {
+    0% {
+        /* left: 50%; */
+        bottom: 0;
+        width: 20%;
+        height: 26%;
+        /* border: none; */
+
+        /* width: ; */
+
+        /* border-radius: 50%; */
+    }
+
+    100% {
+        /* left: 50%; */
+        width: 13%;
+        height: 13%;
+        bottom: 75%;
+        /* border: none; */
+
+        /* border-radius: 25%; */
+    }
+}
+/* add section */
+
 /* footer section starts */
 .footer {
     min-height: auto;
     /* padding-top: 0; */
     background: #1d1d1d;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
 .footer .box-container {

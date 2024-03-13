@@ -6,10 +6,12 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 });
 
+// const blogwritercontenttext = document.getElementById('blog-writer-content');
+// const readmorehover = document.getElementById('readmore-hover');
 const blogwritercontenttext = document.getElementsByClassName('blog-writer-content-text')[0]
 const readmorehover = document.getElementsByClassName('readmore-hover')[0]
 // console.log(blogwritercontenttext);
-// console.log(readmorehover);
+// console.log(readmorehover); 
 
 blogwritercontenttext.addEventListener('mouseover', () => {
 readmorehover.classList.toggle('active') 

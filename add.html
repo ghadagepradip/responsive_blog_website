@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
-  <title>Home</title>
+  <title>Document</title>
 </head>
 
 <body>
@@ -21,9 +21,9 @@
       </a>
       <div class="navbar-links">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="viewblogs.html">View Blogs</a></li>
-          <li><a href="add.html">Post Blog</a></li>
+          <li><a href="#">Post Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -32,24 +32,32 @@
   </header>
   <!-- navigation section ends -->
 
-  <!-- home body section starts -->
-  <section class="home-body">
-    <div class="content">
-      <h2><span class="content-greet">WELCOME</span><span class="content-other"><br>TO <br><span
-            class="content-company">BLOGS SITE</span></span></h2>
-
+  <!-- add form section starts -->
+  <section class="add-form-container">
+    <div class="add-form">
+      <h1>Blogger's Page</h1> 
+        <form action="" class="act-form">
+          <div class="animation">
+            <div class="animation-toy"></div>
+            <div class="animation-toy-2"></div>
+          </div>
+          <label for="username">Writer's Name</label>
+          <input type="text" placeholder="Enter your name"> 
+          <label for="usermail">Writer's Mail ID</label>
+          <input type="email" placeholder="Enter your email">
+          <label for="pro-img">Enter Profile Image </label>
+          <input type="file" placeholder="Image here">
+          <label for="username">Blog Heading</label>
+          <input type="text" placeholder="Enter Blog's name">
+          <label type="text" for="cont-blog">Write Your Blog Here</label>
+          <textarea name="cont-blog" id="" cols="30" rows="10">Blog here</textarea>
+        </form>
     </div>
-    <div class="custom-shape-divider-bottom-1709810101">
-      <svg data-name="Layer 1" class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-        preserveAspectRatio="none">
-        <path
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          class="shape-fill"></path>
-      </svg>
-    </div>
-
+    
   </section>
-  <!-- home body section ends -->
+  <!-- add form section ends -->
+
+  
 
   <!-- footer section starts -->
   <section class="footer">
@@ -63,9 +71,9 @@
 
       <div class="box">
         <h3>Attachement</h3>
-        <a href="#"><ion-icon name="arrow-dropright-circle" class="fa"></ion-icon> Home</a>
+        <a href="index.html"><ion-icon name="arrow-dropright-circle" class="fa"></ion-icon> Home</a>
         <a href="viewblogs.html"><ion-icon name="arrow-dropright-circle" class="fa"></ion-icon> View Blogs</a>
-        <a href="add.html"><ion-icon name="arrow-dropright-circle" class="fa"></ion-icon> Post Blog</a>
+        <a href="#"><ion-icon name="arrow-dropright-circle" class="fa"></ion-icon> Post Blog</a>
         <a href="about.html"><ion-icon name="arrow-dropright-circle" class="fa"></ion-icon> About</a>
         <a href="contact.html"><ion-icon name="arrow-dropright-circle" class="fa"></ion-icon> Contact</a>
       </div>
@@ -84,10 +92,8 @@
   </section>
   <!-- footer section ends -->
 
-
   <script src="js/main.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
 </body>
 
 </html>
