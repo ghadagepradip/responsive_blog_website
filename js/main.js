@@ -8,11 +8,13 @@ toggleButton.addEventListener('click', () => {
 
 // const blogwritercontenttext = document.getElementById('blog-writer-content');
 // const readmorehover = document.getElementById('readmore-hover');
-const blogwritercontenttext = document.getElementsByClassName('blog-writer-content-text')[0]
-const readmorehover = document.getElementsByClassName('readmore-hover')[0]
+
+
+
+var blogwritercontenttext = document.getElementsByClassName('blog-writer-content-text')[0];
+var readmorehover = document.getElementsByClassName('readmore-hover')[0];
 // console.log(blogwritercontenttext);
 // console.log(readmorehover); 
-
 blogwritercontenttext.addEventListener('mouseover', () => {
 readmorehover.classList.toggle('active') 
 });

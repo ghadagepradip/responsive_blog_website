@@ -73,6 +73,7 @@ header {
 
 .navbar-links {
     height: 100%;
+    margin-right: 1%;
 }
 
 .navbar-links ul {
@@ -98,7 +99,7 @@ header {
 .navbar-links li:hover {
     background-color: #555;
     transform: translateX(10px);
-    border-radius: 15%;
+    border-radius: 10px;
     box-shadow: -2px 2px white;
 
 }
@@ -141,12 +142,14 @@ header {
 
     .toggle-button {
         display: flex;
+        right: 5%;
         background-color: #333;
     }
 
     .navbar-links {
         display: none;
         width: 100%;
+        /* margin-right: 1%; */
         min-height: 10px;
 
     }
@@ -202,7 +205,7 @@ header {
     padding: 100px;
     box-sizing: border-box;
     /* background-image: linear-gradient(45deg, #cc2b5e, #e95ea3); */
-    background-image: url("D:/pradip-project/responsive_blog_website/assests/images/img1.jpg");
+    background-image: url("../assests/images/img1.jpg");
     background-size: 100% 100%;
     /* background-size: cover; */
     background-attachment: fixed;
@@ -322,8 +325,8 @@ section img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color:gainsboro; */
-    background-image: url("D:/pradip-project/responsive_blog_website/assests/images/wordb2.jpg");
+    /* background-color:whitesmoke; */
+    background-image: url("../assests/images/wordb2.jpg");
     background-size: 100% 100%;
     background-attachment: fixed;
 }
@@ -366,7 +369,7 @@ section img {
     border-bottom-right-radius: 0;
     box-shadow: 2px 3px gold;
     transition: 1s;
-    background-image: url("D:/pradip-project/responsive_blog_website/assests/images/img11.jpg");
+    background-image: url("../assests/images/img11.jpg");
     background-size: 100% 100%;
     /* border: 1px solid #000; */
 }
@@ -383,7 +386,7 @@ section img {
     /* background-color: yellow; */
     width: 12%;
     height: 80%;
-    background-image: url("D:/pradip-project/responsive_blog_website/assests/images/lady.png");
+    background-image: url("../assests/images/lady.png");
     background-size: 100% 100%;
 }
 
@@ -484,7 +487,7 @@ section img {
     /* position: relative; */
     justify-content: center;
     align-items: center;
-    background-image: url("D:/pradip-project/responsive_blog_website/assests/images/nature1.jpg");
+    background-image: url("../assests/images/nature1.jpg");
     background-attachment: fixed;
     background-size: 100% 100%;
     padding: 3% 0;
@@ -521,6 +524,7 @@ section img {
 
 .container h1 {
     font-size: 2em;
+    margin: 10px 0;
     font-family: 'Times New Roman', Times, serif;
     color: white;
     transition: 1s;
@@ -616,6 +620,106 @@ textarea {
 
 /* contact section ends */
 
+/* about section starts */
+.about-us {
+    width: 100%;
+    height: auto;
+    /* background-color: lightgrey; */
+
+}
+
+.video-div {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* padding: 0 5%; */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* border: 1px solid red; */
+
+}
+
+.video-div .back-video {
+    position: absolute;
+    /* border: 1px solid gold; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* height: auto; */
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.video-div h1 {
+    font-size: 9vw;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* color: cyan; */
+    /* font-weight: 100; */
+    -webkit-text-stroke: 4px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: whitesmoke;
+    /* text-shadow: gold 0px 0 10px; */
+}
+
+.our-mission {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: linear-gradient(90deg, royalblue, blue);
+}
+
+.our-mission-tag {
+    flex-basis: 30%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    color: white;
+    height: 80%;
+    /* border: 1px solid #000; */
+}
+
+.our-mission-tag h1 {
+    font-size: 5em;
+}
+
+.our-mission-para {
+    flex-basis: 50%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 80%;
+    padding: 1%;
+    /* border: 1px solid #000; */
+}
+
+.our-mission-para p {
+    font-size: 1.6em;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .our-mission {
+        flex-direction: column;
+    }
+
+    .our-mission-tag h1 {
+        font-size: 4em;
+    }
+
+    .our-mission-para p {
+        font-size: 1.3em;
+    }
+}
+
+/* about section ends */
 
 /* add section */
 .add-form-container {
@@ -624,7 +728,7 @@ textarea {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    background-image: url("D:/pradip-project/responsive_blog_website/assests/images/spacback.jpg");
+    background-image: url("../assests/images/spacback.jpg");
     background-size: 100% 100%;
     background-attachment: fixed;
 }
@@ -639,8 +743,8 @@ textarea {
     /* border: 1px solid white; */
 
 }
-.add-form h1
-{
+
+.add-form h1 {
     color: white;
     font-size: 2em;
 }
@@ -673,8 +777,8 @@ textarea {
     margin: 5px 0px;
     /* opacity: 0.5; */
 }
-.act-form input[type="text"]::placeholder
-{
+
+.act-form input[type="text"]::placeholder {
     color: white;
 }
 
@@ -687,14 +791,14 @@ textarea {
     margin: 10px 0px;
     /* opacity: 0.5; */
 }
-.act-form input[type="email"]::placeholder
-{
+
+.act-form input[type="email"]::placeholder {
     color: white;
 }
 
 .act-form input[type="file"] {
     /* background-color: rgb(119, 136, 153); */
-    background-color: rgba(119, 136, 153,0.5);
+    background-color: rgba(119, 136, 153, 0.5);
     width: 60%;
     padding: 3px;
     border-radius: 10px;
@@ -749,6 +853,7 @@ textarea {
     animation-timing-function: ease-out;
     animation-direction: alternate-reverse;
 }
+
 .animation-toy-2 {
     width: 23%;
     height: 23%;
@@ -787,6 +892,7 @@ textarea {
         /* border-radius: 25%; */
     }
 }
+
 @keyframes ani2 {
     0% {
         /* left: 50%; */
@@ -810,6 +916,26 @@ textarea {
         /* border-radius: 25%; */
     }
 }
+
+@media (max-width: 400px) {
+
+    .animation {
+        height: 35%;
+    }
+
+    /* .animation-toy {
+        width: 1%;
+        height: 1%;
+        display: none;
+    }
+
+     .animation-toy-2 {
+        width: 1%;
+        height: 1%;
+    }  */
+
+}
+
 /* add section */
 
 /* footer section starts */
