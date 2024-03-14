@@ -196,7 +196,7 @@ header {
 .home-body {
     position: relative;
     width: 100%;
-    min-height: 90vh;
+    height: 90vh;
     margin: auto;
     display: flex;
     text-wrap: wrap;
@@ -225,7 +225,7 @@ header {
 }
 
 .content-greet {
-    font-size: 9vw;
+    font-size: 10vw;
     font-family: 'Times New Roman', Times, serif;
     color: white;
     font-weight: 600;
@@ -240,7 +240,7 @@ header {
 }
 
 .content-other {
-    font-size: 3vw;
+    font-size: 0.8em;
     /* text-shadow:red 1px 0 10px; */
 }
 
@@ -301,22 +301,33 @@ section img {
 }
 
 @media (max-width: 450px) {
+
+    
+    /* .home-body 
+    {
+        height: 80vh;
+    } */
+    .custom-shape-divider-bottom-1709810101 svg 
+    {
+    height: 17vh;
+
+    }
     .content-greet {
-        font-size: 10vw;
+        font-size: 0.9em;
     }
 
     .content-other {
-        font-size: 5vw;
+        font-size: 0.7em;
     }
 
     .content-company {
-        font-size: 5vw;
+        font-size: 0.7em;
     }
 }
 
 /* Main section ends*/
 
-/* blog section ends*/
+/* blog section starts*/
 .blog-list {
     width: 100%;
     height: 100vh;
@@ -332,7 +343,7 @@ section img {
 }
 
 .blog-list h1 {
-    font-size: 3vw;
+    font-size: 2.5em;
     /* font-weight: 400; */
     margin-bottom: 10px;
     color: rgb(255, 33, 33);
@@ -384,8 +395,9 @@ section img {
     border-radius: 50%;
     /* left: 0; */
     /* background-color: yellow; */
-    width: 12%;
-    height: 80%;
+    width: 11%;
+    aspect-ratio: 1;
+    /* height: 80%; */
     background-image: url("../assests/images/lady.png");
     background-size: 100% 100%;
 }
@@ -476,6 +488,19 @@ section img {
 
 .blog-writer-content-logo ion-icon:hover {
     fill: hotpink
+}
+
+@media (max-width:650px)
+{
+    .blog-writer
+    {
+        width: 13%;
+    }
+    .blog-writer-content 
+    {
+        width: 83%;
+        /* border: 1px solid #000; */
+    }
 }
 
 /* contact section starts */
@@ -617,6 +642,16 @@ textarea {
 .container form input[type="submit"]:hover {
     background-image: linear-gradient(45deg, #b92b27, #1565C0);
 }
+@media (max-width: 700px) 
+{
+    .contact{
+        min-height: 70vh;
+    }
+    .contact .container
+    {
+        width: 90%;
+    }
+}
 
 /* contact section ends */
 
@@ -679,6 +714,7 @@ textarea {
 .our-mission-tag {
     flex-basis: 30%;
     display: flex;
+    /* border: 1px solid #000; */
     /* align-items: center; */
     /* justify-content: center; */
     color: white;
@@ -692,6 +728,7 @@ textarea {
 
 .our-mission-para {
     flex-basis: 50%;
+    /* border: 1px solid #000; */
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
@@ -708,14 +745,21 @@ textarea {
 @media (max-width: 700px) {
     .our-mission {
         flex-direction: column;
+        gap: 30px;
+        padding: 10px;
     }
 
     .our-mission-tag h1 {
         font-size: 4em;
     }
-
+    .video-div h1 
+    {
+        text-align: center;
+        font-size: 3.8em;
+    }
     .our-mission-para p {
         font-size: 1.3em;
+        padding: 1%;
     }
 }
 
